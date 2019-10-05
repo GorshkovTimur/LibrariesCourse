@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LibrariesCourse</string>
+    <string name="edit_text_hint">Enter string to concat</string>
+    <string name="textview_hint">Here will be result of the concat</string>
 </resources>

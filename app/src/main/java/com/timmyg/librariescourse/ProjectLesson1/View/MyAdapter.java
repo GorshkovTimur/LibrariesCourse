@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.timmyg.librariescourse.ProjectLesson1.Presenter.PresenterInterface;
 import com.timmyg.librariescourse.R;
 
+import moxy.presenter.InjectPresenter;
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private final String INFO = "INFO";

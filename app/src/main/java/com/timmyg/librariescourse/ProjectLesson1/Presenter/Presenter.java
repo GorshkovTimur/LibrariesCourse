@@ -4,10 +4,15 @@ import com.timmyg.librariescourse.ProjectLesson1.Model.ModelProject;
 import com.timmyg.librariescourse.ProjectLesson1.View.ViewHolderInterface;
 import com.timmyg.librariescourse.R;
 
-public class Presenter {
+import moxy.InjectViewState;
+import moxy.MvpPresenter;
+
+public class Presenter extends MvpPresenter<PresenterInterface> {
+
 
     RecyclerPresenter recyclerPresenter = new RecyclerPresenter();
 
+    @InjectViewState
     private class RecyclerPresenter implements PresenterInterface{
 
         ModelProject modelProject = new ModelProject(R.drawable.biohazard);

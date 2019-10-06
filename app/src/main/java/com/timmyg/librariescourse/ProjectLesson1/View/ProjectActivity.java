@@ -9,15 +9,18 @@ import android.os.Bundle;
 import com.timmyg.librariescourse.ProjectLesson1.Presenter.Presenter;
 import com.timmyg.librariescourse.R;
 
-public class ProjectActivity extends AppCompatActivity {
+import moxy.MvpAppCompatActivity;
+import moxy.presenter.InjectPresenter;
 
-    private Presenter presenter;
+public class ProjectActivity extends MvpAppCompatActivity {
+
+
+    Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_project);
-        presenter = new Presenter();
         initRecyclerView();
     }
 

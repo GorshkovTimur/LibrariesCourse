@@ -2,10 +2,17 @@ package com.timmyg.librariescourse.ProjectLesson1.Presenter;
 
 import com.timmyg.librariescourse.ProjectLesson1.View.ViewHolderInterface;
 
-public interface PresenterInterface {
-        void bindView(ViewHolderInterface iViewHolder);
+import moxy.MvpView;
+import moxy.viewstate.strategy.AddToEndSingleStrategy;
+import moxy.viewstate.strategy.StateStrategyType;
+
+public interface PresenterInterface extends MvpView {
         int getItemCount();
-        void sendModelClick();
         int getCount();
+
+        @StateStrategyType(value = AddToEndSingleStrategy.class)
+        void bindView(ViewHolderInterface iViewHolder);
+        void sendModelClick();
+
 }
 

@@ -8,6 +8,6 @@ public interface SecondView extends MvpView {
 
     @StateStrategyType(value = AddToEndSingleStrategy.class)
     void setTextViewResult(String valueForConcat);
-    String getEditText();
+    void getEditText();
 
 }

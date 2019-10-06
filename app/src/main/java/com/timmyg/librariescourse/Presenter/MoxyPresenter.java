@@ -11,6 +11,17 @@ import moxy.MvpPresenter;
 public class MoxyPresenter extends MvpPresenter<SecondView> {
 
     private Model model;
+    private String tmp;
+    private String textFromEditText;
+
+    public String getTextFromEditText() {
+        return textFromEditText;
+    }
+
+    public void setTextFromEditText(String textFromEditText) {
+        this.textFromEditText = textFromEditText;
+    }
+
 
 
     public MoxyPresenter() {
@@ -20,9 +31,11 @@ public class MoxyPresenter extends MvpPresenter<SecondView> {
 
     public void onButtonClick() {
         String tmp = model.getText();
-        String textFromEditText = getViewState().getEditText();
+        getViewState().getEditText();
         String result = tmp.concat(textFromEditText);
         model.setText(result);
         getViewState().setTextViewResult(result);
     }
+
+
 }

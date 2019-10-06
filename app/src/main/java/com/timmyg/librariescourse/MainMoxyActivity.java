@@ -44,10 +44,10 @@ public class MainMoxyActivity extends MvpAppCompatActivity implements SecondView
     }
 
     @Override
-    public String getEditText() {
+    public void getEditText() {
         String text = editText.getText().toString();
+        presenter.setTextFromEditText(text);
         editText.setText(EMPTY_TEXT);
-        return text;
     }
 
     public void buttonClick(View view) {

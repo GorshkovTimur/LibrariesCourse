@@ -3,4 +3,7 @@
     <string name="edit_text_hint">Enter string to concat</string>
     <string name="textview_hint">Here will be result of the concat</string>
     <string name="text_async_button">start</string>
+    <string name="button_subscribe">subscribe</string>
+    <string name="button_unsubscribe">unsubscribe</string>
+    <string name="button_spam">spam</string>
 </resources>

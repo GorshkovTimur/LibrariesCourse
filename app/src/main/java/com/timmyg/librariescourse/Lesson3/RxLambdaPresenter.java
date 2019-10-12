@@ -3,24 +3,29 @@ package com.timmyg.librariescourse.Lesson3;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.Single;
+import io.reactivex.SingleEmitter;
+import io.reactivex.SingleOnSubscribe;
 
 public class RxLambdaPresenter {
 
-    public Observable<String> getMessage(){
+    public Single<String> getMessage() {
 
-        Observable<String> observable = Observable.create(new ObservableOnSubscribe<String>() {
+        Single<String> single = Single.create(new SingleOnSubscribe<String>() {
             @Override
-            public void subscribe(ObservableEmitter<String> emitter) throws Exception {
-                for (int i=0; i<3; i++){
+            public void subscribe(SingleEmitter<String> emitter) throws Exception {
+                for (int i = 0; i < 3; i++) {
                     String msg = "Hello, world";
-                    emitter.onNext(msg);
+                    emitter.onSuccess(msg);
                 }
             }
         });
-        return observable;
+        return single;
     }
 
-    public  Observable<String> getUberMessage(){
+
+
+        public  Observable<String> getUberMessage(){
         Observable<String> obs = Observable.create((lambda)->{
            for (int i=0; i<3; i++){
                String msg = "Hello lambda";

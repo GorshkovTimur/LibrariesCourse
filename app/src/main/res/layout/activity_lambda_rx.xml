@@ -3,9 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_margin="@dimen/margin"
     tools:context=".Lesson2.RxJava.RxActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <Button
         android:id="@+id/button_subscribe_lambda"
@@ -20,5 +25,14 @@
         android:onClick="onButtonUnsubscribeClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id = "@+id/single_subcribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subscribe_single"/>
+
 
 </LinearLayout>

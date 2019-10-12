@@ -1,6 +1,5 @@
 package com.timmyg.librariescourse.Lesson3;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +12,7 @@ import com.timmyg.librariescourse.R;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.reactivex.Observable;
+import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 
@@ -23,6 +23,8 @@ public class LambdaRxActivity extends AppCompatActivity {
     private RxLambdaPresenter presenter;
     private Observable<String> observable;
     private Disposable disposable;
+    private Disposable singleDispose;
+    private Single<String> single;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class LambdaRxActivity extends AppCompatActivity {
         presenter = new RxLambdaPresenter();
 
         observable = presenter.getUberMessage();
+        single = presenter.getMessage();
 
     }
 
@@ -50,10 +53,20 @@ public class LambdaRxActivity extends AppCompatActivity {
         disposable.dispose();
     }
 
-
-
-
+    @OnClick(R.id.single_subcribe)
+    public void onButtonClick(View view){
+        singleDispose = single.observeOn(AndroidSchedulers.mainThread()).subscribe((string)-> {
+                    Log.i(TAG, "OnComplete"+string);
+                },throwable -> {
+            Log.i(TAG, "OnError");
+                });
         }
+}
+
+
+
+
+
 
 
 

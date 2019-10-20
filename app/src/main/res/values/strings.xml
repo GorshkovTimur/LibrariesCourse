@@ -10,4 +10,6 @@
     <string name="unsubscribe">unsubscribe</string>
     <string name="subscribe_single">single subscribe</string>
     <string name="parse">parse</string>
+    <string name="getgson">get</string>
+    <string name="get">get</string>
 </resources>

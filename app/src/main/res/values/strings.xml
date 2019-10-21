@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">LibrariesCourse</string>
+    <string name="edit_text_hint">Enter string to concat</string>
+    <string name="textview_hint">Here will be result of the concat</string>
+    <string name="text_async_button">start</string>
+    <string name="button_subscribe">subscribe</string>
+    <string name="button_unsubscribe">unsubscribe</string>
+    <string name="button_spam">spam</string>
+    <string name="subscribe">subscribe</string>
+    <string name="unsubscribe">unsubscribe</string>
+    <string name="subscribe_single">single subscribe</string>
+    <string name="parse">parse</string>
+    <string name="getgson">get</string>
+    <string name="get">get</string>
 </resources>

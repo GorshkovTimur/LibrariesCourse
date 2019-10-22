@@ -12,4 +12,8 @@
     <string name="parse">parse</string>
     <string name="getgson">get</string>
     <string name="get">get</string>
+    <string name="insert">insert</string>
+    <string name="insert_list">insert list</string>
+    <string name="delete">delete</string>
+    <string name="update">update</string>
 </resources>

@@ -20,6 +20,8 @@ public class App extends Application {
                 .build();
     }
 
+
+
     public static AppComponent getAppComponent() {
         return appComponent;
     }

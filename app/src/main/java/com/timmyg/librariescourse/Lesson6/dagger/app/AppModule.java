@@ -2,7 +2,8 @@ package com.timmyg.librariescourse.Lesson6.dagger.app;
 
 import android.app.Application;
 
-import com.timmyg.librariescourse.Lesson6.Classes.Green;
+
+import com.timmyg.librariescourse.Lesson6.dagger.Classes.Green;
 
 import javax.inject.Singleton;
 

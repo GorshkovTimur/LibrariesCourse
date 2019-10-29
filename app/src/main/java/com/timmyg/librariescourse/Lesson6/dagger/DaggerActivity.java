@@ -12,6 +12,7 @@ import com.timmyg.librariescourse.R;
 
 import javax.inject.Inject;
 
+
 public class DaggerActivity extends AppCompatActivity {
 
     private static final String TAG = "DaggerActivity";

@@ -59,13 +59,8 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
 
-    def daggerVer = 2.15 // or latest version
-
-    api "com.google.dagger:dagger:$daggerVer"
-    annotationProcessor "com.google.dagger:dagger-compiler:2.21"
-    api "com.google.dagger:dagger-android:$daggerVer"
-    api "com.google.dagger:dagger-android-support:$daggerVer" // if you use the support libraries
-    annotationProcessor "com.google.dagger:dagger-android-processor:$daggerVer"
+    implementation 'com.google.dagger:dagger:2.23.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.21'
 
 
 }

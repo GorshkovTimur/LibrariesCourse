@@ -1,6 +1,5 @@
 package com.timmyg.librariescourse.Lesson6.dagger.app;
 
-
 import android.app.Application;
 
 public class App extends Application {
@@ -13,18 +12,14 @@ public class App extends Application {
         appComponent = generateAppComponent();
     }
 
-    public AppComponent generateAppComponent() {
-        return DaggerAppComponent
-                .builder()
-                .appModule(new AppModule(this))
-                .build();
+    private AppComponent generateAppComponent() {
+    return DaggerAppComponent
+            .builder()
+            .appModule(new AppModule(this))
+            .build();
     }
-
-
 
     public static AppComponent getAppComponent() {
         return appComponent;
     }
-
-
 }

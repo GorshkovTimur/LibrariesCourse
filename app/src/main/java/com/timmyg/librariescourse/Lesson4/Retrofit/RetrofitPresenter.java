@@ -22,13 +22,14 @@ public class RetrofitPresenter {
             Observable<String> single = retrofitApi.requestServer();
             Disposable disposable = single.observeOn(AndroidSchedulers.mainThread()).subscribe(str -> {
                 Log.d(TAG, "onNext: " + str);
-                message(str);
+                result=str;
+                message();
             }, throwable -> {
                 Log.e(TAG, "onError");
             });
         }
 
-    public void message(String str) {
-       Log.e(TAG,str);
+    public void message() {
+        System.out.println(result);
     }
 }

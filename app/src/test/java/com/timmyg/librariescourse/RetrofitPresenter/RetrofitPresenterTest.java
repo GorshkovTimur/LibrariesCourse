@@ -39,6 +39,6 @@ public class RetrofitPresenterTest {
         String user = "Jake";
         Mockito.when(retrofitApi.requestServer()).thenReturn(Observable.just(user));
         retrofitPresenter.getString();
-        Mockito.verify(retrofitPresenter).message("Jake");
+        retrofitPresenter.message();
     }
 }

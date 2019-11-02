@@ -1,8 +1,8 @@
-package com.timmyg.librariescourse.Lesson7.App;
+package com.timmyg.librariescourse.lesson7.app;
 
 
-import com.timmyg.librariescourse.Lesson7.presenter.RetrofitDaggerPresenter;
-import com.timmyg.librariescourse.Lesson7.view.RetrofitDaggerActivity;
+import com.timmyg.librariescourse.lesson7.presenter.RetrofitDaggerPresenter;
+import com.timmyg.librariescourse.lesson7.view.RetrofitDaggerActivity;
 
 import javax.inject.Singleton;
 

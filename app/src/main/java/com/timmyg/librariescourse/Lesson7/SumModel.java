@@ -1,4 +1,4 @@
-package com.timmyg.librariescourse.Lesson7;
+package com.timmyg.librariescourse.lesson7;
 
 public class SumModel {
 

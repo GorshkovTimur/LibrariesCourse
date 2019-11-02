@@ -1,4 +1,4 @@
-package com.timmyg.librariescourse.Lesson7.model;
+package com.timmyg.librariescourse.lesson7.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

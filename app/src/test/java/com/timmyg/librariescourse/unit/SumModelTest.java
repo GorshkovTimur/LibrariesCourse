@@ -1,6 +1,6 @@
 package com.timmyg.librariescourse.unit;
 
-import com.timmyg.librariescourse.Lesson7.SumModel;
+import com.timmyg.librariescourse.lesson7.SumModel;
 
 import org.junit.Assert;
 import org.junit.Before;

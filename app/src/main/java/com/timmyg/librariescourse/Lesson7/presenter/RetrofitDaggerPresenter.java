@@ -1,10 +1,10 @@
-package com.timmyg.librariescourse.Lesson7.presenter;
+package com.timmyg.librariescourse.lesson7.presenter;
 
 import android.util.Log;
 
-import com.timmyg.librariescourse.Lesson7.model.RetrofitDaggerApi;
-import com.timmyg.librariescourse.Lesson7.model.User;
-import com.timmyg.librariescourse.Lesson7.view.RetrofitView;
+import com.timmyg.librariescourse.lesson7.model.RetrofitDaggerApi;
+import com.timmyg.librariescourse.lesson7.model.User;
+import com.timmyg.librariescourse.lesson7.view.RetrofitViewImpl;
 
 import javax.inject.Inject;
 
@@ -15,7 +15,7 @@ import moxy.InjectViewState;
 import moxy.MvpPresenter;
 
 @InjectViewState
-public class RetrofitDaggerPresenter extends MvpPresenter<RetrofitView> {
+public class RetrofitDaggerPresenter extends MvpPresenter<RetrofitViewImpl> {
 
     private static final String TAG = "RetrofitDaggerPresenter";
 

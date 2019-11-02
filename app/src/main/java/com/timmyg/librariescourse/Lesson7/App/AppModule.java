@@ -1,10 +1,10 @@
-package com.timmyg.librariescourse.Lesson7.App;
+package com.timmyg.librariescourse.lesson7.app;
 
 
 import android.app.Application;
 import android.content.Context;
 
-import com.timmyg.librariescourse.Lesson7.model.RetrofitDaggerApi;
+import com.timmyg.librariescourse.lesson7.model.RetrofitDaggerApi;
 
 import javax.inject.Singleton;
 

@@ -1,12 +1,12 @@
-package com.timmyg.librariescourse.Lesson7.view;
+package com.timmyg.librariescourse.lesson7.view;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.timmyg.librariescourse.Lesson7.App.App;
-import com.timmyg.librariescourse.Lesson7.presenter.RetrofitDaggerPresenter;
+import com.timmyg.librariescourse.lesson7.app.App;
+import com.timmyg.librariescourse.lesson7.presenter.RetrofitDaggerPresenter;
 import com.timmyg.librariescourse.R;
 
 import butterknife.BindView;
@@ -16,7 +16,7 @@ import moxy.MvpAppCompatActivity;
 import moxy.presenter.InjectPresenter;
 import moxy.presenter.ProvidePresenter;
 
-public class RetrofitDaggerActivity extends MvpAppCompatActivity implements RetrofitView {
+public class RetrofitDaggerActivity extends MvpAppCompatActivity implements RetrofitViewImpl {
 
 
     private static final String TAG = "RetrofitDaggerActivity";

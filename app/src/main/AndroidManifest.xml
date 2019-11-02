@@ -3,21 +3,23 @@
     package="com.timmyg.librariescourse">
 
     <application
-        android:name=".Lesson6.dagger.app.App"
+        android:name=".lesson7.app.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Lesson7.view.RetrofitDaggerActivity"></activity>
-        <activity android:name=".Lesson6.dagger.DaggerActivity" />
-        <activity android:name=".Lesson6.DiActivity">
+        <activity android:name=".lesson7.view.RetrofitDaggerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Lesson6.dagger.DaggerActivity" />
+        <activity android:name=".Lesson6.DiActivity">
+
         </activity>
         <activity android:name=".Lesson6.NoDIActivity" />
         <activity android:name=".Lesson5.RoomActivity" />

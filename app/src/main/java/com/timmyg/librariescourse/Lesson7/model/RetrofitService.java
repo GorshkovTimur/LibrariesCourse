@@ -1,4 +1,4 @@
-package com.timmyg.librariescourse.Lesson7.model;
+package com.timmyg.librariescourse.lesson7.model;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;

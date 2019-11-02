@@ -1,4 +1,4 @@
-package com.timmyg.librariescourse.Lesson7.App;
+package com.timmyg.librariescourse.lesson7.app;
 
 import android.app.Application;
 
